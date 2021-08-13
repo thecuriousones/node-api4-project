@@ -52,7 +52,7 @@ server.post('/api/login', async (req,res)=>{
                 res.status(404).json({ message: "This user does not exist" })
             }else{
                 console.log('Login was succesful!')
-                res.status(200).json(login)
+                res.status(200).json({message: "Welcome Back!"})
             }
         }
     }catch(err){
